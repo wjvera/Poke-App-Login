@@ -6,7 +6,7 @@ import { autenticacion } from './Firebase'
 import Pokemones from './Components/Pokemones'
 import Login from './Components/Login'
 import Navbar from './Components/Navbar'
-
+import Perfil from './Components/Perfil'
 
 import {
   BrowserRouter as Router,
@@ -14,6 +14,7 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
+
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
           
           <Switch>
               <RutaPrivada component={Pokemones} path="/" exact/>
+              <RutaPrivada component={Perfil} path="/Perfil" exact/>
               <Route component={Login} path="/Login" exact/>
           </Switch>
    

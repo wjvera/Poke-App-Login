@@ -18,7 +18,7 @@ const Login = (props) => {
         if(activo){
             props.history.push('/')
         }
-    }, [activo])
+    }, [activo, props.history])
 
 
     return (

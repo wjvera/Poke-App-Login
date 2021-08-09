@@ -30,6 +30,7 @@ const Navbar = (props) => {
                     activo ? (
                         <>
                         <NavLink className = "btn btn-dark mr-2" to="/" exact>Inicio</NavLink>
+                        <NavLink className = "btn btn-dark mr-2" to="/Perfil" exact>Perfil</NavLink>
                             <button 
                                 className = "btn btn-dark mr-2"
                                 onClick={()=> cerrarCuenta()} 
